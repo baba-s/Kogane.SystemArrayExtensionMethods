@@ -344,9 +344,10 @@ namespace Kogane
         /// <summary>
         /// 1 次元の Array 内全体の要素のシーケンスを反転させます
         /// </summary>
-        public static void Reverse<T>( this T[] array )
+        public static T[] Reverse<T>( this T[] array )
         {
             Array.Reverse( array );
+            return array;
         }
 
         /// <summary>
